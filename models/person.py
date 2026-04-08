@@ -5,6 +5,6 @@ class person:
         self.name=name
         self.lastname=lastname
         self.id=id
-        print(name, lastname, id)
 
-
+    def __str__(self):
+        return f"Nombre: {self.name}, Apellidos: {self.lastname}, DNI: {self.id}"
